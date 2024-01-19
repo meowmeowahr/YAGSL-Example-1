@@ -83,7 +83,6 @@ public class DeviceJson
         return new SparkMaxEncoderSwerve(motor, 360);
       case "canandcoder_can":
         return new CanAndCoderSwerve(id);
-      case "ma3":
       case "ctre_mag":
       case "rev_hex":
       case "throughbore":
@@ -91,6 +90,7 @@ public class DeviceJson
       case "dutycycle":
         return new PWMDutyCycleEncoderSwerve(id);
       case "thrifty":
+      case "ma3":
       case "analog":
         return new AnalogAbsoluteEncoderSwerve(id);
       case "cancoder":
